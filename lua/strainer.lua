@@ -4,7 +4,7 @@ require("strainerpointers")
 
 --goto table
 loadTable = {13,115,117,79,14,15,16,17,18,19,20,21,22,23,24,25,26,27,33,29,30,35,28,31,34,32,52,49,46,54,48,44,53,45,43,42,47,41,50,51,62,63,67,61,58,59,60,64,65,66,74,75,76,77,135,112,136,104,137,139,103,142,141,106,107,108,109,110,114,126,127,118,119,120,80,105,113,36,55,68,78,132,133,134,40,39,38,57,56,111,72,70,71,130,131,37,69}
-bossWarpTable = {13,14,15,16,17,18,19,20,21,22,23,24,32,51,66,77,117,127}
+bossWarpTable = {13,14,15,16,17,18,19,20,21,22,23,24,27,32,51,66,77,117,127}
 
 --checkpoint position offset
 checkpointOffset = 1.4
@@ -310,6 +310,10 @@ function ExecuteBossWarp()
          if screen == 127 then --flashback 2
             writeFloat(varCheckX,241.02)
             writeFloat(varCheckY,-35)
+         end
+         if screen == 27 then --Spectral Ravine
+            writeFloat(varCheckX,503.45)
+            writeFloat(varCheckY,-102)
          end
          if screen == 32 then --Grand Hall
             writeFloat(varCheckX,453.8)
