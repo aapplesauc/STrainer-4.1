@@ -433,7 +433,7 @@ function CharacterWarning(x,y)
          if ((x <= 24 or x>= 115) and y == 3) then return true end
          if ((x == 23 or x == 131 or x == 132 or x == 135 or x == 136 or x == 137 or x == 142) and y == 2) then return true end
          if (x == 107 and y == 1) then return true end
-         if (x == 108 or x == 109) then return true end
+         if ((x == 108 or x == 109) and (y == 0 or y == 1)) then return true end
          if ((x == 79 or x == 33 or x == 35 or x == 34 or x == 52 or x == 54 or x == 53 or x == 67 or x == 80 or x == 105 or x == 40 or x == 39 or x == 38 or x == 57 or x == 72 or x == 71 or x == 114) and y ~= 3) then return true end
 
          return false
